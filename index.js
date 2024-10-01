@@ -14,60 +14,51 @@ let groceryList = ["Milk", "Oreos"];
 //////////////////////////////////////////////////////////////////////
 // 1. Create a function that adds an item to the list.
 // Return the new item.
-
+function add(item){
+groceryList.push(item);
+console.log("item added"+item);
+return item
+}
 // Code to modularize:
-let item1 = "Animal Crackers";
-groceryList.push(item1);
-console.log("Item added: " + item1);
 
-let item2 = "Avocados";
-groceryList.push(item2);
-console.log("Item added: " + item2);
-
-let item3 = "Frozen Pizza";
-groceryList.push(item3);
-console.log("Item added: " + item3);
 
 //////////////////////////////////////////////////////////////////////
 // 2. Create a function that removes the last item from the list.
 // Return the removed item.
+function remove(item2){
+  groceryList2.pop();
+  console.log("item remove " + item2);
+  return item2
+}
+
 
 // Code to modularize:
-let itemToRemove1 = groceryList[groceryList.length - 1];
-groceryList.pop();
-console.log("Item removed: " + itemToRemove1);
 
-let itemToRemove2 = groceryList[groceryList.length - 1];
-groceryList.pop();
-console.log("Item removed: " + itemToRemove2);
 
 //////////////////////////////////////////////////////////////////////
 // 3. Create a function that updates a specific item in the list.
 // Return the updated item.
-
+function updates(item3){
+  groceryList3.shift(item3);
+  console.log("item updated from " + item3)
+}
 // Code to modularize:
-let indexToUpdate1 = 0;
-let newItem1 = "Bananas";
-let oldItem1 = groceryList[indexToUpdate1];
-groceryList[indexToUpdate1] = newItem1;
-console.log("Item updated from " + oldItem1 + " to " + newItem1);
 
-let indexToUpdate2 = 2;
-let newItem2 = "Olive Oil";
-let oldItem2 = groceryList[indexToUpdate2];
-groceryList[indexToUpdate2] = newItem2;
-console.log("Item updated from " + oldItem2 + " to " + newItem2);
 
 //////////////////////////////////////////////////////////////////////
 // 4. Create a function that shows the current grocery list.
 // Returns the grocery list array.
+function shows(){
+  if (groceryList.length === 0) {
+    console.log("The grocery list is empty.");
+  } else {
+    console.log("Grocery List: " + groceryList);
+  }
+  return groceryList
+}
 
 // Code to modularize:
-if (groceryList.length === 0) {
-  console.log("The grocery list is empty.");
-} else {
-  console.log("Grocery List: " + groceryList);
-}
+
 
 //////////////////////////////////////////////////////////////////////
 
@@ -78,12 +69,18 @@ if (groceryList.length === 0) {
 // 1. Write a function that logs how many items you have left in the list.
 // It should log the following "The grocery list has x item(s).", with x being how many items are left.
 // Returns the grocery list length.
-
+function logs(){
+  console.log("The grocery list has"+ groceryList.length)
+  return groceryList.length
+}
 //////////////////////////////////////////////////////////////////////
 // 2. Write a function that clears the whole grocery list.
 // It should log the following "The grocery list is now empty."
 // Returns the empty grocery list.
-
+function clears(){
+  console.log("the grocery list is now empty")
+  return ""
+}
 //////////////////////////////////////////////////////////////////////
 // Part 3 - Calling Functions
 // You want to create a charcuterie board so now it's time to call the functions you wrote in Part 1 and Part 2.
