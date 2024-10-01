@@ -25,10 +25,10 @@ return item
 //////////////////////////////////////////////////////////////////////
 // 2. Create a function that removes the last item from the list.
 // Return the removed item.
-function remove(item2){
-  groceryList2.pop();
-  console.log("item remove " + item2);
-  return item2
+function remove(item){
+  groceryList.pop();
+  console.log("item remove " + item);
+  return item
 }
 
 
@@ -38,9 +38,9 @@ function remove(item2){
 //////////////////////////////////////////////////////////////////////
 // 3. Create a function that updates a specific item in the list.
 // Return the updated item.
-function updates(item3){
-  groceryList3.shift(item3);
-  console.log("item updated from " + item3)
+function updates(item){
+  groceryList.shift(item);
+  console.log("item updated from " + item)
 }
 // Code to modularize:
 
@@ -105,29 +105,29 @@ function clears(){
 */
 
 // Call 1: Clear the grocery list
-
+clears()
 // Call 2: Add Gouda Cheese
-
+add("Gouda Cheese")
 // Call 3: Add Swiss Cheese
-
+add("Swiss Cheese")
 // Call 4: Remove Swiss Cheese
-
+remove("Swiss Cheese")
 // Call 5: Add Green Grapes
-
+add("Green Grapes")
 // Call 6: Add Prosciutto
-
+add("Prosciutt")
 // Call 7: Add Chorizo
-
+add("Chorizo")
 // Call 8: Add Multigrain Crackers
-
+add("Multigrain Crackers")
 // Call 9: Update Chorizo to Jamon
-
+updates(" Chorizo to Jamon")
 // Call 10: Show the count of items
-
+shows()
 // Call 11: Add Pita Chips
-
+add("pita")
 // Call 12: Show the final list
-
+shows()
 
 //////////////////////////////////////////////////////////////////////
 // Extra Credit - Improving functions
